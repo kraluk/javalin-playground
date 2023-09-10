@@ -128,6 +128,10 @@ tasks.jacocoTestReport {
 
 tasks.check { dependsOn(integrationTest) }
 
+tasks.distTar {
+  enabled = false
+}
+
 ktlint {
   version.set(toolLibs.versions.ktlint.get())
   android.set(false)
