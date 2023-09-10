@@ -41,7 +41,9 @@ dependencies {
 
   testImplementation(kotlin("test"))
   testImplementation("org.junit.jupiter:junit-jupiter-engine:${testLibs.versions.junit.get()}")
-  testImplementation("org.amshove.kluent:kluent:${testLibs.versions.kluent.get()}")
+  testImplementation("org.amshove.kluent:kluent:${testLibs.versions.kluent.get()}") {
+    exclude(group = "junit", module = "junit") // excluding junit4
+  }
 
   integrationTestImplementation("io.javalin:javalin-testtools:${libs.versions.javalin.get()}")
 }
