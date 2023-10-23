@@ -39,8 +39,8 @@ dependencies {
   implementation("org.slf4j:slf4j-api:${libs.versions.slf4j.get()}")
   implementation("ch.qos.logback:logback-classic:${libs.versions.logback.get()}")
 
-  testImplementation(kotlin("test"))
-  testImplementation("org.junit.jupiter:junit-jupiter-engine:${testLibs.versions.junit.get()}")
+  testImplementation("org.junit.jupiter:junit-jupiter:${testLibs.versions.junit.get()}")
+  testImplementation("org.junit.jupiter:junit-jupiter-params:${testLibs.versions.junit.get()}")
   testImplementation("org.amshove.kluent:kluent:${testLibs.versions.kluent.get()}") {
     exclude(group = "junit", module = "junit") // excluding junit4
   }
