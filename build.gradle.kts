@@ -77,14 +77,14 @@ tasks.test {
 
 java {
   toolchain {
-    languageVersion.set(JavaLanguageVersion.of(17))
+    languageVersion.set(JavaLanguageVersion.of(21))
   }
 }
 
 tasks.withType<KotlinCompile> {
   kotlinOptions {
     freeCompilerArgs = listOf("-java-parameters", "-Xjsr305=strict")
-    jvmTarget = JavaVersion.VERSION_17.majorVersion
+    jvmTarget = JavaVersion.VERSION_21.majorVersion
   }
 }
 

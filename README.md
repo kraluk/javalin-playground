@@ -2,7 +2,7 @@
 
 ## Configuration
 
-* install Java 17 (preferable [Eclipse Temurin](https://adoptium.net/))
+* install Java 21 (preferable [Eclipse Temurin](https://adoptium.net/))
 * install Gradle or use its wrapper `gradlew`
 * install [Colima](https://github.com/abiosoft/colima) container runtime
 
