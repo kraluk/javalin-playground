@@ -166,7 +166,7 @@ tasks.withType<Detekt>().configureEach {
 project.afterEvaluate { // https://github.com/detekt/detekt/issues/6198
   configurations["detekt"].resolutionStrategy.eachDependency {
     if (requested.group == "org.jetbrains.kotlin") {
-      useVersion("1.9.0")
+      useVersion("1.9.21")
     }
   }
 }
